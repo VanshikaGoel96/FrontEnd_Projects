@@ -1,0 +1,86 @@
+<html>
+<style>
+    body{
+  font-size:140%;
+  background-image:url("https://i.ytimg.com/vi/u-SHHwAJDY8/maxresdefault.jpg");
+}
+#main{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+form{
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  width:100%;
+  max-width:60%;
+  background-color:hsla(277,100%,52%,0.25);
+  border-radius:5px;
+padding:1.25em;
+}
+#area{
+  width:100%
+}
+#submit{
+   background-color: #4CAF50;
+  border:none;
+  width:100%;
+  color: white;
+  padding: 15px 32px;
+  font-size:0.7em;
+}
+.inp{
+  width:100%;
+  height:2.5em;
+  border:none;
+  border-radius:5px;
+}
+</style>
+<div id="main">
+<h1 id="title">Art Enthusiasts Form</h1>
+  <p id="description">Help us know you !!</p>
+  <form action="/submit-art-form" id="survey-form">
+   <label for="name-label" id="name-label">Name 
+    </label>
+    <input type="text" placeholder="Enter Name" id="name" required class="inp">
+   <label for="email-label" id="email-label">Email
+     </label>
+    <input type="email" placeholder="Enter Email" id="email" required class="inp">
+   <label for="number-label" id="number-label">Age
+     </label>
+    <input type="number" placeholder="Enter Number" id="number" min="12" max="100" class="inp" required>
+    <h4>Would you reccomend us??</h4>
+    <label for="Definitely">
+    <input type="radio" name="reccomendation" value="definitely"> Definitely </label>
+    <label for="May-be">
+    <input type="radio" name="reccomendation" value="May-be"> May be </label>
+    <label for="not-sure">
+    <input type="radio" name="reccomendation" value="not-sure"> Not sure</label>
+ <label for="choices">
+   <h4>Choose what you want</h4>
+ <select id="dropdown" class="inp">
+  <option value="Learn-Skill">Learn Skill</option>
+  <option value="Teach-Skill">Teach Skill</option>
+  <option value="Buy-Stuff">Buy Stuff</option>
+  <option value="Sell-Stuff">Sell Stuff</option>
+</select>
+   </label>
+   <h4>Choose your Interest</h4>
+         <label for="Paintings">
+       <input type="checkbox" value="Paintings" name="art-style"> Paintings </label>
+             <label for="Doodles">
+       <input type="checkbox" value="Doodles" name="art-style"> Doodles </label>
+             <label for="sketches">
+       <input type="checkbox" value="sketches" name="art-style"> sketches </label>
+             <label for="craft-items">
+       <input type="checkbox" value="craft-items" name="art-style"> craft-items </label>
+    <label for="comments">
+      <h4>Give Suggestions</h4>
+      <textarea rows="8" columns="100%" id="area">Enter Suggestions</textarea>
+      <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  
+</html>
